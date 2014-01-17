@@ -5,7 +5,7 @@ Forked from [CarsonF](https://github.com/CarsonF/flurry-phonegap-plugin)
 
 Updated to be installable via plugman/cordova-cli and compatible with cordova 2.9.0 and 3.x.  If you want to use 2.9, use the cordova2_9 branch.  Otherwise, use the master branch.
 
-Included latest Flurry libraries (Android: 3.2.1, iOS: 4.2.3)
+Included latest Flurry libraries (Android: 3.3.2, iOS: 4.3.0)
 
 
 =====

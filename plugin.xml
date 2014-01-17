@@ -16,9 +16,10 @@
                 <param name="android-package" value="com.phonegap.plugins.Flurry" />
             </feature>
         </config-file>
+
         <source-file src="src/android/Flurry.java"
                      target-dir="src/com/phonegap/plugins" />
-        <source-file src="src/android/Flurry_3.2.1.jar"
+        <source-file src="src/android/FlurryAnalytics_3.3.2.jar"
                      target-dir="libs" />
     </platform>
 
@@ -28,15 +29,18 @@
                 <param name="ios-package" value="CDVFlurry" />
             </feature>
         </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        </config-file>
 
         <header-file src="src/ios/CDVFlurry.h" />
         <source-file src="src/ios/CDVFlurry.m" />
         <source-file src="src/ios/Flurry.h" />
-        <source-file src="src/ios/libFlurry_4.2.3.a" framework="true" />
+        <source-file src="src/ios/libFlurry_4.3.0.a" framework="true" />
 
-        <framework src="UIKit.framework" />
         <framework src="Security.framework" />
-        <framework src="AdSupport.framework" />
+        <framework src="SystemConfiguration.framework" />
     </platform>
 
 </plugin>
